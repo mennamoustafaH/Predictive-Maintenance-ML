@@ -48,7 +48,7 @@ if st.button("Predict"):
 
     if pred_fail == 1:
         st.error("Prediction: *FAILURE*")
-        st.subheader(""Failure Probability")
+        st.subheader("Failure Probability")
         st.write(f"*Failure Probability:* {proba_fail:.2%}")
 
         # 2) Failure type prediction (only if failure)
