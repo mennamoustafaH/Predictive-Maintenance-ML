@@ -35,7 +35,6 @@ features_all=features_num+['Type_L','Type_M']
 for col in features_num:
     inputs[col] = st.number_input(col, value=0.0)
 
-# Build one-row DataFrame in the same order as training
 X_input = pd.DataFrame([inputs], columns=features_all)
 
 # ----------------------------
@@ -44,7 +43,7 @@ X_input = pd.DataFrame([inputs], columns=features_all)
 if st.button("Predict"):
     # 1) Binary prediction
     proba_fail = float(binary_model.predict_proba(X_input)[:, 1][0])
-    pred_fail = int(proba_fail >= 0.25)  # default threshold 0.5 (you can change later)
+    pred_fail = int(proba_fail >= 0.25) 
 
 
     if pred_fail == 1:
