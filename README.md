@@ -1,25 +1,26 @@
 # Predictive Maintenance (Machine Learning) + Streamlit App
 
-This project builds machine learning models for predictive maintenance using sensor/process data.
-It covers two tasks:
+*Live Demo (Streamlit Cloud):* https://predictive-maintenance-ml-3bcyxnypa8csbkm5rmm56e.streamlit.app/
+
+This project builds machine learning models for predictive maintenance using sensor/process data. It covers two tasks:
 
 1) *Failure Prediction (Binary Classification)*  
-   Predict whether the machine will fail (0 = No Failure, 1 = Failure)
+   Predict whether the machine will fail (0 = No Failure, 1 = Failure).
 
 2) *Failure Type Prediction (Multi-Class Classification)*  
-   Predict the failure category *only when failure is expected*.
+   Predict the failure category *only when failure is expected* (Target = 1).
 
-A lightweight *Streamlit app* is included so *non-programmers* can use the models through a simple form interface (no coding needed).
+A lightweight *Streamlit app* is included so *non-programmers* can use the trained models through a simple form interface (no coding needed).
 
 ---
 
 ## Repository Files
-- predictive_maintenance.csv → dataset
-- machine predictive maintenance.ipynb → full ML workflow (training + evaluation)
-- app.py → Streamlit app (user interface)
-- requirements.txt → Python dependencies
-- binary_model.pkl → trained binary model (failure / no failure)
-- type_model.pkl → trained multi-class model (failure type)
+- predictive_maintenance.csv → dataset  
+- machine predictive maintenance.ipynb → full ML workflow (training + evaluation)  
+- app.py → Streamlit app (user interface)  
+- requirements.txt → Python dependencies  
+- binary_model.pkl → trained binary model (failure / no failure)  
+- type_model.pkl → trained multi-class model (failure type)  
 
 ---
 
@@ -53,7 +54,12 @@ Main steps:
 
 ---
 
-## Run the Streamlit App Locally
-### 1) Install dependencies
+## How to Use the App
+### Option A — Open the live app (recommended)
+Just open the link and try it in the browser:  
+https://predictive-maintenance-ml-3bcyxnypa8csbkm5rmm56e.streamlit.app/
+
+### Option B — Run locally
+1) Install dependencies:
 ```bash
 pip install -r requirements.txt
