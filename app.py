@@ -48,13 +48,13 @@ if st.button("Predict"):
 
     if pred_fail == 1:
         st.error("Prediction: *FAILURE*")
-        st.subheader("Result (Binary)")
+        st.subheader(""Failure Probability")
         st.write(f"*Failure Probability:* {proba_fail:.2%}")
 
         # 2) Failure type prediction (only if failure)
         type_pred = type_model.predict(X_input)[0]
         
-        st.subheader("Result (Failure Type)")
+        st.subheader("Failure Type")
 
         failure_map={0:'Heat Dissipation Failure',
                      1: 'Overstrain Failure',
