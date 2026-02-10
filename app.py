@@ -14,9 +14,6 @@ st.title("Predictive Maintenance – Failure & Failure Type Predictor")
 st.write("Enter sensor values, then click *Predict*.")
 
 # ----------------------------
-# IMPORTANT: put your EXACT feature column names here (same as training X columns)
-# Example only — replace with your real columns from X.columns
-# ----------------------------
 features_num = [
     "Air temperature [K]",
     "Process temperature [K]",
